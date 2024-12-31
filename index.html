@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+   <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Zenithoria, Travel and tourism</title>
+ <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+</head>
+
+<body >
+    <header class="navbar" id="navbar">
+        <span class="planet-name 2xl:text-[36px] ">
+           <p>ZENITHORIA</p> </i>
+        </span>
+        <nav>
+            <ul class="sidebar font-semibold border-b-2 border-gray-700">
+                <li class="cross" onclick="hideSidebar()"><a ><span class="material-symbols-outlined">
+                            close
+
+                        </span>
+                    </a></li>
+                <li><a href="index.html" class="home hover:border-b-2 hover:border-red-600">Home
+                    </a></li>
+                <li><a href="#about">About
+                    </a></li>
+                <li><a href="#booking">Booking
+                    </a></li>
+                <li><a href="#contacts">Contact
+                    </a></li>
+
+
+            </ul>
+            <ul>
+                <li class="hideOnMobile  mx-[50px] xl:mx-[23px]"><a href="index.html"><button
+                            class="custom-btn btn-1 flex items-center justify-center  ">Home</button></a></li>
+                <li class="hideOnMobile mx-[50px]  "><a href="#about"><button
+                            class="custom-btn btn-1 flex items-center justify-center  ">About</button></a></li>
+                <li class="hideOnMobile mx-[50px] "><a href="#booking"><button
+                            class="custom-btn btn-1 flex items-center justify-center ">Booking</button></a></li>
+                <li class="hideOnMobile  mx-[50px] "><a href="#contacts"><button
+                            class="custom-btn btn-1 flex items-center justify-center ">Contact </button></a></li>
+                <li class="menu xl:hidden" onclick="showSidebar()"><a ><span class="material-symbols-outlined">
+                            menu
+                        </span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section">
+        <div class="video">
+            <video loop tabindex="-1" autoplay
+                src="https://video.wixstatic.com/video/9c608a_ab0cd13143ac4839ac48e1cb88f55425/1080p/mp4/file.mp4"></video>
+            <div class="overlay">
+            </div>
+            <div class="main-heading">
+                <span class="text"></span><span class="cursor"></span><br>
+                <p class="sec-text">WHERE IMAGINATION MEETS THE UNIVERSE</p>
+                <p class="third-text">A planet like no other!</p>
+                <span class="svg"><svg preserveAspectRatio="xMidYMid meet" fill="white" data-bbox="0 -0.04 6.06 185.05"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.04 6.06 185.05"
+                        role="presentation" aria-hidden="true">
+                        <g>
+                            <path
+                                d="M3.41 179.01V5.96a2.67 2.67 0 0 0 2.63-3 3 3 0 0 0-2.94-3 3.09 3.09 0 0 0-3.1 3 3.38 3.38 0 0 0 2.41 3v173.05a3.36 3.36 0 0 0-2.38 3 3.06 3.06 0 0 0 3.07 3 2.93 2.93 0 0 0 2.91-3 2.65 2.65 0 0 0-2.6-3z">
+                            </path>
+                        </g>
+                    </svg></span>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="sec-container">
+        <div class="sec-section">
+            <div class="text-slider ">
+                <p class="slide text-5xl  tracking-widest ">Journey to the heart of the solar system </p>
+                <p class="slide  text-5xl   tracking-widest"> Venture into the mesmerizing world of Zenithoria</p>
+                <p class="slide  text-5xl   tracking-widest"> A celestial jewel suspended between Saturn and Uranus.</p>
+                <p class="slide  text-5xl  tracking-widest">Immerse yourself in its radiant bioluminescent forests. </p>
+                <p class="slide  text-5xl   tracking-widest"> Dazzling crystal mountains, and magnetic floating islands.
+                </p>
+                <p class="slide  text-5xl   tracking-widest"> With neon-lit skies and vibrant ecosystems. </p>
+                <p class="slide  text-5xl   tracking-widest"> Zenithoria promises an otherworldly. </p>
+                <p class="slide  text-5xl   tracking-widest"> Adventure where imagination meets the universe.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- this is about section here, i am using tailwind css -->
+
+
+
+    <div class="text-white bg-white dark:bg-slate-900 h-[90vh] " id="about">
+
+        <div data-aos="fade-up" data-aos-delay="400" class="flex justify-center flex-col p-4  space-y-4 font-sans">
+            <div class="explore flex justify-center text-4xl font-bold text-center 2xl:text-6xl  ">
+                <p>LET'S EXPLORE</p>
+            </div>
+            <div class="flex justify-center text-center text-4xl font-bold 2xl:text-6xl ">
+                ZENITHORIA
+            </div>
+        </div>
+     
+
+
+
+
+
+        <div  class="selector flex justify-center flex-row gap-10  max-lg:grid  " >
+            <div data-aos="fade-up" data-aos-delay="400" class="position-container dark:bg-slate-800   ">
+                <div class="position-card">
+                    <lord-icon src="https://cdn.lordicon.com/qzjvmvpc.json" trigger="loop"
+                        style="width:70px;height:70px; background:transparent; margin: 18px 0;">
+                    </lord-icon>
+                    <h3 class="uppercase text-2xl font-bold ">Position</h3>
+                </div>
+                <div class="description">
+                    <p> Zenithoria, perfectly nestled between
+                        Saturn and Uranus... <a href="#position" class="text-blue-700 underline">More Info</a></p>
+                </div>
+            </div>
+
+
+
+
+            <div data-aos="fade-up" data-aos-delay="400" class="position-container dark:bg-slate-800  ">
+                <div class="position-card">
+                    <lord-icon src="https://cdn.lordicon.com/btvefodi.json" trigger="loop"
+                        style="width:70px;height:70px; margin: 18px 0;">
+                    </lord-icon>
+                    <h3 class="text-2xl uppercase font-bold">Atmosphere</h3>
+                </div>
+                <div class="description">
+                    <p>The atmosphere of Zenithoria is a vivid
+                        swirl of blue... <a href="#position" class="text-blue-700 underline">More Info</a></p>
+                </div>
+            </div>
+
+
+            <div data-aos="fade-up" data-aos-delay="400" class="position-container dark:bg-slate-800  ">
+                <div class="position-card">
+                    <lord-icon src="https://cdn.lordicon.com/pactquzy.json" trigger="loop"
+                        style="width:70px;height:70px; margin: 18px 0;">
+                    </lord-icon>
+                    <h3 class="uppercase text-2xl font-bold">Inhabiting</h3>
+                </div>
+                <div class="description">
+                    <p>Diverse species of energy-based life
+                        forms that can alter their shape... <a href="#atmosphere" class="text-blue-700 underline">More
+                            Info</a></p>
+                </div>
+            </div>
+
+
+            <div data-aos="fade-up" data-aos-delay="400" class="position-container  dark:bg-slate-800  ">
+                <div class="position-card">
+                    <lord-icon  src="https://cdn.lordicon.com/zruuduya.json"trigger="loop"
+                        style="width:70px;height:70px; margin: 18px 0;">
+                    </lord-icon>
+                    <h3 class="uppercase font-bold text-2xl">ecosystem</h3>
+                </div>
+                <div class="description">
+                    <p>Zenithoria's plants and animals glow with
+                        natural bioluminescence.. <a href="#species" class="text-blue-700 underline">More Info</a></p>
+                </div>
+            </div>
+
+ 
+            <div data-aos="fade-up" data-aos-delay="400" class="position-container  dark:bg-slate-800  ">
+                <div class="position-card">
+                    <lord-icon src="https://cdn.lordicon.com/rszehxiz.json" trigger="loop"
+                    style="width:70px;height:70px; margin: 18px 0;">
+                </lord-icon>
+                    <h3 class="uppercase font-bold text-2xl">cultural</h3>
+                </div>
+                <div class="description">
+                    <p>Zenithoria's culture is a harmonious
+                        blend of adaptation and innovation, deeply rooted... <a href="#ecosystem"
+                            class="text-blue-700 underline">More Info</a> </p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="images-description dark:bg-slate-900 w-[100%]  h-[60%]">
+        <div class="Position    ">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white " id="position">Postoin of Zenithoria</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500  ">Zenithoria, perfectly nestled between
+                    Saturn and Uranus, occupies a unique position in the solar system that offers both stability and a
+                    spectacular view of its neighboring giants. Marvel of celestial design, it bridges the icy expanse
+                    of
+                    the outer planets and offers a unique blend of environmental phenomena. Zenithoria orbits the Sun at
+                    an
+                    average distance of approximately 16 AU (astronomical units), making it a midway point in the vast
+                    reaches of the solar system's outer regions.</p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center">
+                <img src="asset/images/DALL·E 2024-11-29 22.00.47 - A breathtaking artistic depiction of the planet Zenithoria, located perfectly between Saturn and Uranus. The scene shows Zenithoria in space with a un.webp"
+                    class="description-image rounded-lg  mx-5  " alt="">
+            </div>
+        </div>
+        <div class="Position" id="atmosphere">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white uppercase ">atmosphere</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500 ">The atmosphere of Zenithoria is a
+                    vivid
+                    swirl of blue and green hues, rich in exotic gases like methane and xenon, giving its sky a glowing,
+                    bioluminescent appearance during its long nights.A moon that radiates faint light due to its
+                    phosphorescent crust.
+                    A golden-hued moon with rich metallic deposits.A volcanic moon with towering geysers.
+                </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center">
+                <img src="asset/images/atmospher.webp" class="description-image rounded-lg   m-5 my-5 " alt="">
+            </div>
+        </div>
+        <div class="Position " id="species">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white ">Inhabiting Species</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500 ">Diverse species of energy-based life
+                    forms that can alter their shape and glow in various colors. Amphibious creatures that thrive in
+                    methane
+                    oceans, and intelligent crystal beings that communicate through light pulsesVast crystalline plains
+                    made
+                    of frozen ammonia and water ice glisten under the pale sunlight.
+                    Towering mountains of reflective diamond-like carbon and frozen nitrogen reach into the thin
+                    atmosphere.
+                    Majestic oceans of liquid hydrocarbons, much like Saturn’s moon Titan, flow gently across its
+                    surface..
+                </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400"class="flex justify-center items-center">
+                <img src="asset/images/species.webp" class="description-image rounded-lg  m-5 my-5 " alt="">
+            </div>
+        </div>
+
+
+        <div class="Position " id="ecosystem">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white  ">Ecosystem</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500 ">Zenithoria's plants and animals glow
+                    with
+                    natural bioluminescence, creating ethereal light shows in its dense forests and vast oceans.
+                    Lumispires, tall tree-like structures, emit a soft, ambient light that powers photosynthesis even in
+                    low-light conditions.
+                    Creatures like Luminfish in the oceans and Glowbeetles on land use bioluminescence to attract mates
+                    or
+                    ward off predators.
+                    Unique Energy Cycle:
+
+                    Instead of relying entirely on sunlight, ecosystems on Zenithoria harness magnetic energy from the
+                    planet’s strong electromagnetic fields. This energy fuels many life processes, similar to
+                    photosynthesis
+                    on Earth.</p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center ">
+                <img src="asset/images/EcoSystem.webp" class="description-image rounded-lg   m-5 my-5 " alt="">
+            </div>
+        </div>
+
+
+
+        <div class="Position">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white  ">Cultural</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500">Zenithoria's culture is a harmonious
+                    blend of adaptation and innovation, deeply rooted in its unique environment. The planet's
+                    inhabitants,
+                    known as Zenithorians, celebrate the interconnectedness of life, drawing inspiration from the
+                    bioluminescent glow of their flora and fauna. Art and architecture on Zenithoria are crafted with
+                    natural luminescent materials, creating structures that glow softly in the dark, mirroring the
+                    vibrant
+                    ecosystems around them. Music and storytelling are central to their traditions, often performed
+                    during
+                    the stunning auroras that light up the sky. Festivals are held in honor of the Bright and Dark
+                    Seasons,
+                   </p>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center">
+                <img src="asset/images/Culutral.webp" class="description-image rounded-lg   m-5 my-5 " alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="images-description dark:bg-slate-900 w-[100%]  h-[60%]">
+        <div class="Position    ">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white " id="position"> Stargazing Adventures</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500  ">Enjoy unmatched views of Zenithoria’s crystal-clear night sky. Witness celestial wonders like the twin moons of Thaloria and glowing meteor showers. A guided telescope tour is available for beginners and stargazing enthusiasts alike.</p>
+                <h2 class="px-6 text-lg text-white ">Activity Highlights:</h2>
+                <ul class="list-disc ml-5 text-gray-500 ">Guided tours for constellations and meteor spotting.</ul>
+                <ul class="list-disc ml-5 text-gray-500">Luxurious campsites with night sky domes.</ul>
+
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center">
+                <img src="asset/images/shooting-star-2024127_640.png"
+                    class="description-image rounded-lg  mx-5  " alt="">
+            </div>
+        </div>
+        <div class="Position" id="atmosphere">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white uppercase ">Crystal Caves</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500 ">Venture into Zenithoria’s glowing crystal caves, where bioluminescent minerals light up the pathways. These caves are home to rare geological formations that are exclusive to the planet.
+                </p>
+                <h2 class="px-6 text-lg text-white ">Activity Highlights:</h2>
+                <ul class="list-disc ml-5 text-gray-500 ">Guided cave tours.</ul>
+                <ul class="list-disc ml-5 text-gray-500">Photography-friendly zones for explorers.</ul>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center">
+                <img src="https://plus.unsplash.com/premium_photo-1661897264411-9d1915616451?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="description-image rounded-lg   m-5 my-5 " alt="">
+            </div>
+        </div>
+        <div class="Position " id="species">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white ">Floating Island</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500 "> Ascend to Zenithoria's famed floating islands. These magical landscapes hover above the planet’s surface, offering panoramic views and unique flora found nowhere else.
+                    Image Ideas: A floating island with greenery, explorers walking on suspension bridges.
+                    
+                </p>
+                <h2 class="px-6 text-lg text-white ">Activity Highlights:</h2>
+                <ul class="list-disc ml-5 text-gray-500 ">Safe hiking trails.</ul>
+                <ul class="list-disc ml-5 text-gray-500">Paragliding from the islands for the adventurous.</ul>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400"class="flex justify-center items-center">
+                <img src="asset/images/photoshop-1617999_640.jpg" class="description-image rounded-lg  m-5 my-5 " alt="">
+            </div>
+        </div>
+
+
+        <div class="Position " id="ecosystem">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white  "> Underwater Domes</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500 ">Explore Zenithoria's underwater cities through bio-domes that give a 360-degree view of its aquatic life. Interact with friendly marine creatures and learn about the unique ecosystem of the planet.</p>
+                <h2 class="px-6 text-lg text-white ">Activity Highlights:</h2>
+                <ul class="list-disc ml-5 text-gray-500 ">Aquatic museum tours.</ul>
+                <ul class="list-disc ml-5 text-gray-500">Marine life interaction programs.</ul>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center ">
+                <img src="asset/images/shark-3347787_640.jpg" class="description-image rounded-lg   m-5 my-5 " alt="">
+            </div>
+        </div>
+
+
+
+        <div class="Position">
+            <div data-aos="fade-right" data-aos-delay="200" class="text-container flex justify-start flex-col">
+                <h1 class="text-5xl font-bold m-5 text-white  "> Zenithorian Culinary</h1>
+                <p class="text-xl text-wrap text-start m-3 text-slate-500"> Savor exotic cuisine inspired by the planet’s ecosystem. Try dishes made from rare Zenithorian plants and fruits
+                   </p>
+                   <h2 class="px-6 text-lg text-white ">Activity Highlights:</h2>
+                <ul class="list-disc ml-5 text-gray-500 ">Aquatic museum tours.</ul>
+                <ul class="list-disc ml-5 text-gray-500">Marine life interaction programs.</ul>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="400" class="flex justify-center items-center">
+                <img src="asset/images/futuristic-home-8397004_640.jpg" class="description-image rounded-lg   m-5 my-5 " alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="booking dark:bg-slate-900 flex justify-center flex-col items-center  text-white " id="booking">
+        
+        <h1 class="flex justify-center  text-3xl font-bold space-y-3 text-white">Book Your Zenithoria Adventure</h1>
+        <p class="text-xl my-10">Reserve your trip to explore the wonders of Zenithoria!</p>
+    </div>
+    <section class="contact">
+        <div class="container">
+          <div class="content flex justify-center">
+           
+            <div class="right-side flex justify-center">
+              <form data-aos="fade-left" data-aos-delay="400">
+                <h1>BOOKING NOW</h1>
+                <div class="row-1">
+                  <input type="text" placeholder="First Name" >
+                  <input type="text" placeholder="Last Name" >
+                </div>
+                <div class="row-1">
+                  <input type="email" placeholder="Email" >
+                  <input type="text" placeholder="Phone Number" >
+                </div>
+                <div class="row-1">
+                  <input type="datetime-local" placeholder="Arrival Date & Time" >
+                  <input type="date" placeholder="Departure Date" >
+                </div>
+                <textarea placeholder="Message"></textarea>
+                <div class="remember">
+                  <input type="checkbox" >
+                  <p>
+                    By clicking on the "Submit" button, I accept the terms of
+                    processing of my personal data
+                  </p>
+                </div>
+                <button>Submit</button>                  
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+               
+
+        <div class="flex justify-center items-center  p-10 dark:bg-slate-900">
+            <button type="submit" class="custom-btn btn-1  ">Book </button>
+        </div>
+    
+
+
+    <div class="rates  dark:bg-slate-900 text-white  flex flex-row   justify-between">
+        <div class="first-rating">
+            <p class=" rates-one text-3xl 2xl:text-5xl font-bold flex justify-center  ">95%</p>
+            <p class="rates-two text-slate-500 2xl:text-3xl my-3 flex text-center">Satisfication Rate</p>
+        </div>
+        <div class="first-rating">
+            <p class=" rates-one text-3xl 2xl:text-5xl  font-bold flex justify-center">500+</p>
+            <p class="rates-two text-slate-500 2xl:text-3xl my-3 ">Guided Tours Annually</p>
+        </div>
+        <div class="first-rating">
+            <p class=" rates-one  text-3xl 2xl:text-5xl font-bold flex justify-center"> 150+</p>
+            <p class="rates-two text-slate-500 2xl:text-3xl my-3">Destinations</p>
+        </div>
+        <div class="first-rating">
+            <p class="rates-one text-3xl 2xl:text-5xl font-bold flex justify-center">2,000+</p>
+            <p class=" rates-two text-slate-500 my-3 2xl:text-3xl">Positive Reviews</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+   
+  
+      <footer class="footer-section" id="contacts">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Tameer-i-Nau Public College, Quetta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+923033838455</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                           
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>>
+ 
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script src="zen.js"></script>
+
+</html>
